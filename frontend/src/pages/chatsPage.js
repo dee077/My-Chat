@@ -1,7 +1,7 @@
 import React, { useState ,useEffect } from 'react'
 import axiox from 'axios'
 
-const chatsPage = () => {
+const ChatsPage = () => {
   
   const [chats, setChats] = useState([]);
   const fetchChats = async ()=>{
@@ -24,4 +24,4 @@ const chatsPage = () => {
   )
 }
 
-export default chatsPage
+export default ChatsPage
