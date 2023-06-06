@@ -11,8 +11,8 @@ const Login = () => {
   const [show, setShow] = useState(false);
   const handleClick = () => setShow(!show);
   const toast = useToast();
-  const [email, setEmail] = useState();
-  const [password, setPassword] = useState();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
 
   const history = useHistory();
@@ -31,7 +31,7 @@ const Login = () => {
       return;
     }
 
-    // console.log(email, password);
+    console.log(email, password);
     try {
       const config = {
         headers: {
@@ -45,7 +45,7 @@ const Login = () => {
         config
       );
 
-      // console.log(JSON.stringify(data));
+      console.log(JSON.stringify(data));
       toast({
         title: "Login Successful",
         status: "success",
@@ -80,7 +80,7 @@ const Login = () => {
           onChange={(e) => setEmail(e.target.value)}
         />
       </FormControl>
-      <FormControl id="password" isRequired>
+      <FormControl id="passwordLogin" isRequired>
         <FormLabel>Password</FormLabel>
         <InputGroup size="md">
           <Input

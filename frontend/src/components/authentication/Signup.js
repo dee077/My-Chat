@@ -100,9 +100,9 @@ const Signup = () => {
     if (pics.type === "image/jpeg" || pics.type === "image/png") {
       const data = new FormData();
       data.append("file", pics);
-      data.append("upload_preset", "chat-app");
-      data.append("cloud_name", "piyushproj");
-      fetch("https://api.cloudinary.com/v1_1/piyushproj/image/upload", {
+      data.append("upload_preset", "my_chat");
+      data.append("cloud_name", "dzvxhb90e");
+      fetch("https://api.cloudinary.com/v1_1/dzvxhb90e/image/upload", {
         method: "post",
         body: data,
       })
@@ -138,7 +138,7 @@ const Signup = () => {
           onChange={(e) => setName(e.target.value)}
         />
       </FormControl>
-      <FormControl id="email" isRequired>
+      <FormControl id="emailSignup" isRequired>
         <FormLabel>Email Address</FormLabel>
         <Input
           type="email"
@@ -146,7 +146,7 @@ const Signup = () => {
           onChange={(e) => setEmail(e.target.value)}
         />
       </FormControl>
-      <FormControl id="password" isRequired>
+      <FormControl id="passwordSignup1" isRequired>
         <FormLabel>Password</FormLabel>
         <InputGroup size="md">
           <Input
@@ -161,7 +161,7 @@ const Signup = () => {
           </InputRightElement>
         </InputGroup>
       </FormControl>
-      <FormControl id="password" isRequired>
+      <FormControl id="passwordSignup2" isRequired>
         <FormLabel>Confirm Password</FormLabel>
         <InputGroup size="md">
           <Input
