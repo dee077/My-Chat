@@ -1,4 +1,4 @@
-import './App.css';
+import './css/App.css';
 import { Route } from 'react-router-dom/cjs/react-router-dom';
 import HomePage from './pages/HomePage';
 import ChatsPage from './pages/ChatsPage';
