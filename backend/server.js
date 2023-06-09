@@ -37,7 +37,7 @@ app.use(notFound);
 app.use(errorHandler);
 
 const PORT=process.env.PORT || 5000
-const FRONT_URL=process.env.FRONT_URL || "http://localhost:3000";
+const FRONT_URL= "/";
 
 const server = app.listen(
     PORT,
