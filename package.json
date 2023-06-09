@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A MERN Stack chat application ",
   "main": "index.js",
+  "proxy":"https://my-chat-live.onrender.com",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node backend/server.js",
