@@ -37,7 +37,7 @@ app.use(notFound);
 app.use(errorHandler);
 
 const PORT=process.env.PORT || 5000
-const FRONT_URL= "http://localhost:3000";
+const FRONT_URL= "https://my-chat-live.onrender.com";
 
 const server = app.listen(
     PORT,
