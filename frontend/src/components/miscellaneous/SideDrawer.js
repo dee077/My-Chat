@@ -32,6 +32,7 @@ import { getSender } from "../../config/ChatLogics";
 import UserListItem from "../userAvatar/UserListItem";
 import { ChatState } from "../../context/ChatProvider";
 
+
 function SideDrawer() {
   const [search, setSearch] = useState("");
   const [searchResult, setSearchResult] = useState([]);
@@ -141,9 +142,12 @@ function SideDrawer() {
             </Text>
           </Button>
         </Tooltip>
-        <Text fontSize="2xl" fontFamily="Work sans">
+        <Box display="flex" alignItems="center" >
+        {/* <div className="logo"></div> */}
+        <Text fontSize="2xl" fontFamily="Work sans" marginRight="1">
           My Chat Web App
         </Text>
+        </Box>
         <div>
           <Menu>
             <MenuButton p={1}>

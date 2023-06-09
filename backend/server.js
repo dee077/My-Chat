@@ -37,6 +37,7 @@ app.use(notFound);
 app.use(errorHandler);
 
 const PORT=process.env.PORT || 5000
+const FRONT_URL=process.env.FRONT_URL || "http://localhost:3000";
 
 const server = app.listen(
     PORT,
@@ -46,7 +47,7 @@ const server = app.listen(
   const io = require("socket.io")(server, {
     pingTimeout: 60000,
     cors: {
-      origin: "http://localhost:3000",
+      origin: FRONT_URL,
       // credentials: true,
     },
   });

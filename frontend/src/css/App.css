@@ -19,3 +19,13 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+.logo{
+  background-image: url("../../assets/logo.png");
+  background-color: black;
+  height: 30px;
+  width: 30px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 100%;
+}
